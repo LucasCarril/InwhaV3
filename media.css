@@ -1,0 +1,136 @@
+/* ---- ADAPTACION A MOBILE ---- */
+
+
+
+
+@media (max-width: 500px) {
+
+
+    .navbar{
+        padding-top: 5%;
+    }
+    
+    .contenedorTextos h2{
+        font-size: 1.0rem;
+    }
+    
+    /* .contenedorTextos h1{
+        font-size: 2rem;
+    } */
+    
+    .contenedorTextos p{
+        font-size: .5rem;
+    }
+    
+
+
+
+
+
+    /* ---SOBRE NOSOTROS--- */
+
+
+
+    .sobreNosotrosTexto{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .sobreNosotroScontText{
+        width: 100%;
+        padding: 5%;
+    }
+
+    .sobreNosotroScontText h1{
+        width: 100%;
+    }
+
+
+    .sobreNosotroScontText h2{
+        font-size: 1.0rem;
+    }
+
+    .sobreNosotroScontText h1{
+
+        font-size: 1.8rem;
+    }
+
+    .sobreNosotroScontText p{
+        font-size: .5rem;
+        width: 80%;
+    }
+
+
+
+
+    /* COMPETENCIA */
+
+
+    .categoriaCompetencia{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .torneosNacionales, .panamericano, .mundial {
+        margin-bottom: 5%;
+    }
+
+    .torneosNacionales h2, .panamericano h2, .mundial h2{
+        font-size: 1rem;
+    }
+
+    .torneosNacionales p, .panamericano p, .mundial p{
+        font-size: .5rem;
+    }
+
+
+    /* --- PROGRAMAS --- */
+
+    .contImgProgramas{
+        width: 100%;
+        height: 25rem;
+        padding: 1%;
+        border-radius: 10px;
+    }  
+
+
+    /* --- GALERIA --- */
+
+    .galeriaFTop, .galeriaFDown, .imgDaleriaInstagram{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .galeriaFTop img, .galeriaFDown img, .imgDaleriaInstagram img{
+        width: 200px;
+    }
+
+
+
+
+
+    /* --- CONTACTO --- */
+
+    #seccionContacto{
+        height: auto;
+    }
+
+    .textoContacto{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+
+
+    
+
+}

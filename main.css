@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    scroll-behavior: smooth;
+    color: #FFF;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.iconNavbar{
+    font-size: 30px;
+}
+
+
+body{
+    background-color: #080808;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+    
+@media (max-width: 991px) {
+    body {
+        padding-top: 0; /* Elimina el espacio superior en dispositivos pequeños */
+    }
+}
+
+.navbar-brand img {
+    max-height: 40px; /* Altura máxima de la imagen del logo */
+}
+
+/* header{
+    position: absolute;
+    top: 0;
+} */
+
+.nav-link:hover{
+    color: #754EF9;
+}
+
+
+.navbar{
+    position: absolute;
+    width: 100%;
+    padding: 0 5%;
+}
+
+.navbar a, i{
+    color: #fff;
+}
+
+
+/*BACKGOUND INICIO*/
+#inicio{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 500;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("img/stock/imgFondoInicio-min.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+.seccionCont{
+    height: 100vh;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contenedorTextos h2{
+    color: #FFF;
+    font-size: 2.0rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.contenedorTextos h1{
+    color: #FFF;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.contenedorTextos p{
+    color: #FFF;
+    font-size: 1.0rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.redesInicio{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.seccionCont .facebookRedes, .instagramRedes, .tiktokRedes{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2%;
+    margin-bottom: 5%;
+    text-align: center;
+    border: 2px solid #754EF9;
+    border-radius: 50%;
+}
+
+.seccionCont .facebookRedes:hover, .instagramRedes:hover, .tiktokRedes:hover{
+    background-color: #754EF9;
+}
+
+.seccionCont .btnEmpecemos{
+    color: #FFF;
+    font-size: 1rem;
+    padding: 10px;
+    font-style: normal;
+    font-weight: 600;
+    background-color: #754EF9;
+    border-radius: 10px;
+}
+
+.seccionCont .btnEmpecemos:hover{
+    background-color: transparent;
+    border: 2px solid #754EF9;
+    color: #754EF9;
+}
+
+
+/*ADAPTADO A TABLET*/
+
+@media (min-width: 500px) and (max-width: 1000px){
+    .seccionCont{
+        width: 70%;
+    }
+
+    .seccionCont h2{
+        font-size: 2rem;
+    }
+    
+    .seccionCont h1{
+        font-size: 3rem;
+    }
+    
+    .seccionCont p{
+        font-size: 1rem;
+    }
+    
+    .seccionCont .btnEmpecemos{
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+/* ---- ¿QUIEN SOMOS? ----- */
+
+
+#sobreNosotros{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .1)), url("img/stock/fotoConSol-min.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.sobreNosotrosIMG{
+    height: 100vh;
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  /* .imgNosotros{
+    width: 100%;
+    height: 100vh;
+    background: url("img/stock/fotoConSol.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1000;
+  } */
+
+
+.sobreNosotrosTexto{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobreNosotroScontText{
+    width: 70%;
+}
+
+.sobreNosotroScontText h2{
+    width: 70%;
+    color: #754EF9;
+    font-size: 1.0rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.sobreNosotroScontText h1{
+    width: 70%;
+    color: #fff;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sobreNosotroScontText p{
+    width: 95%;
+    color: #fff;
+    font-size: 1.0rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+
+/* --- SOBRE NOSOTROS ADAPTADO A TABLET ----*/
+
+
+@media (min-width: 1025px) {
+    .sobreNosotroScontText h1{
+        font-size: 2rem;
+    }
+    .valoresImg img{
+        width: 100%;
+        height: 30rem;
+    }
+}
+
+
+
+
+/* --- COMPETENCIAS --- */
+
+#seccionCompetencia{
+    width: 100%;
+    height: 100vh;
+}
+
+.contCompentencia{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+.textoCompentencia{
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+}
+
+.textoCompentencia h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+.categoriaCompetencia{
+    padding: 5%;
+}
+
+
+.torneosNacionales h2, .panamericano h2, .mundial h2{
+    font-size: 1.5rem;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 10%;
+}
+
+.torneosNacionales i, .panamericano i, .mundial i{
+    font-size: 2rem;
+}
+
+
+.torneosNacionales p, .panamericano p, .mundial p{
+    width: 50%;
+    margin-top: 3%;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+
+/* --- TERMINA COMPETENCIA --- */
+
+
+
+
+/* ---- ARRANCA SECCION PROGRAMAS  ---- */
+
+#seccionProgramas{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("img/stock/textura-fondo-min.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contTextPrograma{
+    width: 100%;
+    height: auto;
+    margin: 2%;
+}
+
+.contTextPrograma h1{
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.contTextPrograma h2{
+    color: #8e6df9;
+    font-size: 1.0rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.contenedorProgramas{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* color de fondo */
+}
+
+.contCarta{
+    width: 100%;
+}
+
+.card-body{
+    background-color: transparent;
+    border: transparent;
+}
+
+/* --- cartas --- */
+
+.carta1, .carta2, .carta3, .carta4, .carta5, .carta6, .carta7{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+    
+.contImgProgramas{
+    width: calc(100%/3);
+    padding: 1%;
+    height: 25rem;
+    border-radius: 10px;
+}    
+
+/* --- FIN CARTA --- */
+
+
+/* ---TITULOS CARTA--- */
+
+.textTopPrograma{
+    width: 100%;
+    height: 50%;
+    padding: 2%;
+}
+
+.textTopPrograma p{
+    color: #888888;
+    font-weight: 700;
+}
+
+
+.TituloCartaPrograma{
+    width: 100%;
+    height: 50%;
+}
+
+.TituloCartaPrograma h1{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.TituloCartaPrograma p{
+    width: 90%;
+    font-size: 13px;
+    color: #888888;
+    font-weight: 500;
+}
+
+/* CARTA1 */
+
+.carta1{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("img/stock/tigresTkd-min.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+
+
+/* CARTA2 */
+.carta2{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("img/stock/grupoAdultoTkd-min.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* CARTA3 */
+.carta3{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("img/stock/niñosTkd-min.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* CARTA4 */
+.carta4{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("img/stock/kravMaga-min.png");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* CARTA5 */
+.carta5{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("img/stock/gymMujer-min.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* CARTA6 */
+.carta6{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("img/stock/gymImg-min.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* CARTA7 */
+.carta7{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("img/stock/pilates-min.png");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* FLECHAS */
+.iconProgramaLeft i, .iconProgramaRight i {
+    font-size: 50px;
+    background-color: rgba(22, 22, 22, 1);
+    border-radius: 50%;
+    color: #faf8f8;
+}
+
+
+/* --- TEXTO DEBAJO DE CARTAS --- */
+
+
+.subTextCarta{
+    margin-top: 2%;
+}
+
+
+.subTextCarta p{
+    color: #fff;
+    font-weight: 400;
+    font-size: .7rem;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+    transform: translateX(0);
+}
+
+
+
+
+/*PROGRAMA ADAPTADO A MOBILE*/
+
+@media (max-width: 500px) {
+    
+    
+}
+
+/*ADAPTADO A TABLET*/
+
+@media (min-width: 500px) and (max-width: 1000px){
+    
+    
+}
+
+
+
+/* TERMINAR PROGRAMAS */
+
+
+
+/* COMIENZA GALERIA */
+
+#galeria{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+
+
+.galeriaTitulo h2{
+    color: #754EF9;
+    position: relative;
+    left: 8.5%;
+    width: 50%;
+    font-size: 1.0rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+
+.galeriaTitulo h1{
+    color: #fff;
+    position: relative;
+    left: 8%;
+    width: 50%;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.galeriaFoto img{
+    width: 15%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 2%;
+}
+
+.imgDaleriaInstagram{
+    width: 15%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 2%;
+}
+
+.imgDaleriaInstagram img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 2%;
+}
+
+
+/* --- SECCION CONTACTO --- */
+
+#seccionContacto{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(22, 22, 22, 0.7), rgba(0, 0, 0, 0.5)),  url("img/stock/charlein-gracia-mqKKCsZgzXQ-unsplash-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: yellowgreen; */
+}
+
+.textoContacto{
+    width: 100%;
+    height: 100vh;
+    /* background-color: wheat; */
+}
+
+iframe{
+    width: 100%;
+    height: 70vh;
+    padding-right: 5%;
+    padding-left: 5%;
+    direction: none;
+}
+
+
+
+/* --- SE ARRANCA FOOTER --- */
+
+footer a, p{
+    text-decoration: none;
+    color: #FFF;
+}
+
